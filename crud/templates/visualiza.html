@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualização</title>
+</head>
+<body>
+<div style="text-align: center">
+    <div style="margin-bottom: 50px">
+        <h1>Visualização dos Produtos</h1>
+    </div>
+    <div>
+        {% for produto in produtos %}
+            <p>Nome do produto: {{ produto.nome }}</p>
+            <p>Preco: {{ produto.preco }}</p>
+            <p>Quantidade: {{ produto.quantidade }}</p>
+            <br/>
+        {% endfor %}
+    </div>
+</div>
+</body>
+</html>

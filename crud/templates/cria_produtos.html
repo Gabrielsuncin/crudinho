@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualização</title>
+</head>
+<body>
+<div style="text-align: center">
+    <div style="margin-bottom: 50px">
+        <h1>Criação dos Produtos</h1>
+    </div>
+    <div>
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Adiciona Produto</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
